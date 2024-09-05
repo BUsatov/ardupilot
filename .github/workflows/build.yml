@@ -29,6 +29,7 @@ jobs:
           python3-setuptools \
           python3-wheel \
           ninja-build
+        python -m pip install empy==3.3.4
 
     - name: Clone ArduPilot submodules
       run: |
