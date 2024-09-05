@@ -29,10 +29,6 @@ jobs:
       run: |
         git submodule update --init --recursive
 
-    - name: Set up environment
-      run: |
-        python3 -m pip install -r Tools/environment_install/install_requirements.txt
-
     - name: Build ArduPilot
       run: |
         ./waf configure --board CubeOrangePlus
